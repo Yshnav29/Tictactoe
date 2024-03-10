@@ -1,0 +1,86 @@
+* {
+    outline: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+button {
+    border: none;
+}
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    .outerbox {
+        height: 32em;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        .playboard {
+            background-color: rgb(48, 48, 48);
+            border-radius: 15px;
+            width: 25em;
+            height: 25em;
+            display: grid;
+            gap: 0.8em;
+            grid-template-columns: 4.5em 4.5em 4.5em;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+
+            .cell {
+                background-color: #fff;
+                border-radius: 6px;
+                height: 3em;
+                border: none;
+                color: #000;
+                font-weight: 600;
+                font-size: 1.5rem;
+            }
+        }
+        #restart {
+            width: 7em;
+            height: 3em;
+            border-radius: 8px;
+            background-color: rgb(48, 48, 48);
+            color: #fff;
+            font-weight: 600;
+        }
+    }
+    .popup {
+        background-color: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        div {
+            width: 15em;
+            height: 10em;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            h3 {
+                color: #fff;
+                font-weight: 600;
+                font-size: 2rem;
+                text-align: center;
+            }
+            button {
+                width: 7em;
+                height: 3.5em;
+                border-radius: 6px;
+                background-color: rgba(0, 0, 0, 1);
+                color: #fff;
+                font-weight: 600;
+            }
+        }
+    }
+    .hide {
+        display: none;
+    }
+}
