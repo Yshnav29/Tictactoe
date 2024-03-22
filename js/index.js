@@ -71,12 +71,12 @@ cell.forEach((element) => {
         if(xturn) {
             xturn = false;
             element.innerText = 'X';
-            element.disabled;
+            element.disabled = true;
         }
         else {
             xturn = true;
             element.innerText = 'O';
-            element.disabled;
+            element.disabled = true;
         }
         count += 1;
         if(count == 9) {
